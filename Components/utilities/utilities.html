@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilities | TacUI</title>
+    <link rel="icon" href="../Assets/header-logo.svg" type="image/svg">
+    <link rel="stylesheet" href="../components.css">
+    <link rel="stylesheet" href="/docs-css/docs.css">
+    <script src="https://kit.fontawesome.com/e057b28e7b.js" crossorigin="anonymous"></script>
+    <script src="/docsite.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar flex-row-spc-btw">
+            <div class="nav-header">
+                <h1 class="nav-logo"><a href="/index.html">TacUI</a></h1>
+            </div>
+            <nav class="nav-actions">
+                <ul class="flex-row-spc-btw">
+                    <li><a href="https://github.com/paul-coder-22/ComponentLib" class="btn-icon btn-icon-primary"
+                            target="_blank"><i class="fab fa-github"></i></a></li>
+                    <!-- mobile nav toggle button -->
+                    <li class="nav-toggle-li-item"><button class="btn-icon btn-icon-primary" id="nav-toggle-btn"><i
+                                class="fas fa-bars"></i></button></li>
+                </ul>
+            </nav>
+        </div>
+        <!--  -->
+        <hr class="hr">
+        <div class="grid-doc-layout">
+            <!-- main -->
+            <main class="main">
+                <div class="component-intro">
+                    <h2>Text Utilities</h2>
+                    <p>Text Utilities are used to style an element that hold some text, easily.</p>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Headings.</h3>
+                    <p>These are default headings, can be achieved by wrapping the content in &lth1&gt, &lth2&gt,
+                        &lth3&gt, &lth4&gt,&lth5&gt and &lth6&gt.</p>
+                </div>
+                <div class="component-code-examples">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Ch1%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%253EHeading%25206%253C%252Fh6%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Text Alignment.</h3>
+                    <p>We have three different text alignments, Left, Center and Right.</p>
+                    <p>To achieve this, just add <span class="txt-clr-primary"> txt-left, txt-center, txt-right
+                        </span>class to the element.</p>
+                </div>
+                <div class="component-code-examples">
+                    <div class="txt-left txt-bold txt-clr-info">Left Aligned.</div>
+                    <div class="txt-center txt-bold txt-clr-success">Center Aligned</div>
+                    <div class="txt-right txt-bold txt-clr-error">Right Aligned</div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522txt-left%2520txt-bold%2520txt-clr-info%2522%253ELeft%2520Aligned.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522txt-center%2520txt-bold%2520txt-clr-success%2522%253ECenter%2520Aligned%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522txt-right%2520txt-bold%2520txt-clr-error%2522%253ERight%2520Aligned%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Text Decorations.</h3>
+                    <p>We have few text styles, to achieve any of them just added their respective class to the element.
+                    </p>
+                    <p>The classes are <span class="txt-clr-primary">txt-strike, txt-underline, txt-uppercase, txt-grey,
+                            txt-bold</span> .</p>
+                </div>
+                <div class="component-code-examples">
+                    <div class="txt-strike">Text Strike through, Lorem ipsum dolor sit.</div>
+                    <div class="txt-underline">Text with Underline.</div>
+                    <div class="txt-uppercase">All Capitals</div>
+                    <div class="txt-grey">Faded Text, Lorem, ipsum dolor.</div>
+                    <div class="txt-bold">Bold Text</div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522txt-strike%2522%253EText%2520Strike%2520through%252C%2520Lorem%2520ipsum%2520dolor%2520sit.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522txt-underline%2522%253EText%2520with%2520Underline.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522txt-uppercase%2522%253EAll%2520Capitals%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522txt-grey%2522%253EFaded%2520Text%252C%2520Lorem%252C%2520ipsum%2520dolor.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522txt-bold%2522%253EBold%2520Text%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Coloured Texts.</h3>
+                    <p>There are five text colors, to achieve each of them just added their respective class to the
+                        element.</p>
+                    <p>The classes are <span class="txt-clr-primary">txt-clr-primary, txt-clr-error, txt-clr-warning,
+                            txt-clr-info, txt-clr-success</span>.</p>
+                </div>
+                <div class="component-code-examples">
+                    <div class="txt-clr-primary txt-bold">Text with primary-color.</div>
+                    <div class="txt-clr-error txt-bold">Text with error-color</div>
+                    <div class="txt-clr-warning txt-bold">Text with warning-color</div>
+                    <div class="txt-clr-info txt-bold">Text with info-color</div>
+                    <div class="txt-clr-success txt-bold">Text with success-color</div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522txt-clr-primary%2522%253EText%2520with%2520primary-color.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522txt-clr-error%2522%253EText%2520with%2520error-color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522txt-clr-warning%2522%253EText%2520with%2520warning-color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522txt-clr-info%2522%253EText%2520with%2520info-color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522txt-clr-success%2522%253EText%2520with%2520success-color%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Text Sizes.</h3>
+                    <p>We have five font sizes, to achieve each of them just added their respective class to the
+                        element.</p>
+                    <p>The classes are <span class="txt-clr-primary">font-size-xs, font-size-sm,font-size-normal,
+                            font-size-lg, font-size-xl</span>.</p>
+                </div>
+                <div class="component-code-examples">
+                    <div class="font-size-xs">Extra Small Text.</div>
+                    <div class="font-size-sm">Small Text.</div>
+                    <div class="font-size-normal">Normal Text.</div>
+                    <div class="font-size-lg">Large Text.</div>
+                    <div class="font-size-xl">Extra large Text.</div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522font-size-xs%2522%253EExtra%2520Small%2520Text.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522font-size-sm%2522%253ESmall%2520Text.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522font-size-normal%2522%253ENormal%2520Text.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522font-size-lg%2522%253ELarge%2520Text.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522font-size-xl%2522%253EExtra%2520large%2520Text.%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </main>
+            <aside class="aside">
+                <h3 class="faded-font">Components</h3>
+                <ul class="aside-nav-links">
+                    <li class="nav-item"><a href="../avatar/avatar.html">Avatar</a></li>
+                    <li class="nav-item"><a href="../alert/alert.html">Alert</a></li>
+                    <li class="nav-item"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="nav-item"><a href="../button/button.html">Button</a></li>
+                    <li class="nav-item"><a href="../card/card.html">Card</a></li>
+                    <li class="nav-item"><a href="../image/image.html">Image</a></li>
+                    <li class="nav-item"><a href="../input/input.html">Input</a></li>
+                    <li class="nav-item"><a href="../modal/modal.html">Modal</a></li>
+                    <li class="nav-item"><a href="../rating/rating.html">Rating</a></li>
+                    <li class="nav-item"><a href="../toast/toast.html">Toast</a></li>
+                    <li class="nav-item"><a href="..lists/lists.html">Lists</a></li>
+                    <li class="nav-item"><a href="../slider/slider.html">Slider</a></li>
+                    <li class="nav-item"><a href="../navigation/navigation.html">Navigation</a></li>
+                    <li class="nav-item"><a href="../utilities/utilities.html" class="aside-btn-active">Utilities</a>
+                    </li>
+                    <li class="nav-item"><a href="../grid/grid.html">Simplified Grids</a></li>
+                </ul>
+                <button class="btn-icon btn-icon-primary" id="close-aside-btn"><i class="fas fa-times"></i></button>
+            </aside>
+        </div>
+        <!--  -->
+        <hr class="hr">
+        <footer class="footer flex-row-spc-btw">
+            <p>Kiron Paul</p>
+            <nav class="footer-actions">
+                <ul class="flex-row-center-center">
+                    <li><a href="https://twitter.com/pulmicheal1" class="btn-icon btn-icon-primary" target="_blank"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/paul-coder-22" class="btn-icon btn-icon-primary" target="_blank"><i
+                                class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kironpaul/" class="btn-icon btn-icon-primary"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

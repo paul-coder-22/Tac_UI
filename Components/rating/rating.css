@@ -1,0 +1,51 @@
+
+.rating-input{
+    width: 0;
+    height: 0;
+    margin: 0;
+    opacity: 0;
+}
+.rating-icon{
+    color: grey;
+    cursor: pointer;
+}
+.rating-icon i{
+    color: inherit;
+}
+.rating-icon:hover{
+    color: goldenrod;
+}
+
+.rating-input:checked ~.rating-icon{
+    color: gold;
+}
+
+/*  */
+.rating-user-avg{
+    border-radius:4px;
+    background-color: var(--clr-primary);
+    padding:4px 6px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 14px;
+    font-weight: var(--fw-bold-600);
+}
+
+.rating-user-avg .rating-icon{
+    color: var(--clr-secondary);
+}
+/*  */
+.rating-short{
+    border-radius: 4px;
+    background-color:whitesmoke;
+    padding:var(--padding-xs);
+    font-size: 14px;
+    box-shadow: var(--box-shadow-light);
+}
+.rating-short .rating-user-avg{
+    background-color: inherit;
+    color: var(--clr-black);
+}
+.rating-short .rating-icon{
+    color: var(--clr-secondary);
+}

@@ -1,0 +1,18 @@
+
+@import url(./index.css);
+
+/* components */
+@import url(./alert/alert.css);
+@import url(./button/button.css);
+@import url(./avatar/avatar.css);
+@import url(./badge/badge.css);
+@import url(./image/image.css);
+@import url(./input/input.css);
+@import url(./card/card.css);
+@import url(./modal/modal.css);
+@import url(./grid/grid.css);
+@import url(./toast/toast.css);
+@import url(./rating/rating.css);
+@import url(./navigation/navigation.css);
+@import url(./lists/lists.css);
+@import url(../Components/slider/slider.css);

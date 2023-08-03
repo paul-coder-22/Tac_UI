@@ -1,0 +1,109 @@
+.range-wrapper {
+    width: 15rem;
+    margin: 0 var(--margin-md);
+}
+
+.range-track {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    margin: 0 var(--margin-md);
+}
+
+.range-track::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+.range-track:focus {
+    outline: none;
+}
+.range-track::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    background: transparent;
+}
+
+/* Chrome thumb */
+.range-track::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid var(--clr-whitesmoke);
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: var(--clr-secondary);
+    cursor: pointer;
+    margin-top: -5px;
+    box-shadow: var(--box-shadow-light);
+}
+
+/*Firefox thumb*/
+.range-track::-moz-range-thumb {
+    border: 1px solid var(--clr-whitesmoke);
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: var(--clr-secondary);
+    cursor: pointer;
+    box-shadow: var(--box-shadow-light);
+}
+
+/* IE thumb */
+.range-track::-ms-thumb {
+    border: 1px solid var(--clr-whitesmoke);
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: var(--clr-secondary);
+    cursor: pointer;
+    box-shadow: var(--box-shadow-light);
+}
+
+/* chrome track */
+.range-track::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-light);
+    background: var(--clr-primary);
+    border-radius: 4px;
+}
+
+/* mozilla track */
+.range-track::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-light);
+    background: var(--clr-primary);
+    border-radius: 4px;
+}
+
+/* IE track, edge */
+.range-track::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+.range-track::-ms-fill-lower {
+    background: var(--clr-primary);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-light);
+}
+
+.range-track::-ms-fill-upper {
+    background: var(--clr-primary);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-light);
+}
+
+/* range icon */
+.range-with-icon i{
+    margin: var(--margin-xs);
+}

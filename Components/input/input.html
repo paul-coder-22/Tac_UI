@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input | TacUI</title>
+    <link rel="icon" href="../Assets/header-logo.svg" type="image/svg">
+    <link rel="stylesheet" href="../components.css">
+    <link rel="stylesheet" href="/docs-css/docs.css">
+    <script src="https://kit.fontawesome.com/e057b28e7b.js" crossorigin="anonymous"></script>
+    <script src="/docsite.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar flex-row-spc-btw">
+            <div class="nav-header">
+                <h1 class="nav-logo"><a href="/index.html">TacUI</a></h1>
+            </div>
+            <nav class="nav-actions">
+                <ul class="flex-row-spc-btw">
+                    <li><a href="https://github.com/paul-coder-22/ComponentLib" class="btn-icon btn-icon-primary"
+                            target="_blank"><i class="fab fa-github"></i></a></li>
+                    <!-- mobile nav toggle button -->
+                    <li class="nav-toggle-li-item"><button class="btn-icon btn-icon-primary" id="nav-toggle-btn"><i
+                                class="fas fa-bars"></i></button></li>
+                </ul>
+            </nav>
+        </div>
+        <!--  -->
+        <hr class="hr">
+        <div class="grid-doc-layout">
+            <!-- main -->
+            <main class="main">
+                <div class="component-intro">
+                    <h2>Form Inputs.</h2>
+                    <p>Forms contain multiple things like Text Input, Password, Checkbox etc, we'll see them below along
+                        with their validation.</p>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Inputs with/without required attribute</h3>
+                    <p>By default anyone can submit a form if there is no <span class="primary-accent">required</span>
+                        attribute on it.</p>
+                    <p>So, we add a <span class="primary-accent">required</span> attribute for those inputs which are
+                        needed.
+                        Also add <span class="primary-accent">form-input-required</span> class to the label to highlight
+                        that input is needed.</p>
+                </div>
+                <div class="component-code-examples">
+                    <div class="form-control">
+                        <label class="form-label" for="input">First Name</label>
+                        <input class="form-input" type="text" name="input" placeholder="enter name">
+                    </div>
+                    <div class="form-control">
+                        <label class="form-label form-input-required" for="input">Email</label>
+                        <input class="form-input" type="email" name="input" required placeholder="enter email">
+                    </div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-control%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2522%2520for%253D%2522input%2522%253EFirst%2520Name%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input%2522%2520type%253D%2522text%2522%2520name%253D%2522input%2522%2520placeholder%253D%2522enter%2520name%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522form-control%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2520form-input-required%2522%2520%2520for%253D%2522input%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input%2522%2520type%253D%2522email%2522%2520%2520name%253D%2522input%2522%2520required%2520placeholder%253D%2522enter%2520email%2522%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3><span class="primary-accent">Disabled and Read only.</span></h3>
+                    <p>To disable an input, just add <span class="primary-accent">disabled</span> attribute to the tag,
+                        same holds for read only, just add <span class="primary-accent">readonly</span>.</p>
+                </div>
+                <div class="component-code-examples">
+                    <div class="form-control">
+                        <label class="form-label form-input-required">Enter Email:</label>
+                        <input class="form-input" type="email" disabled>
+                    </div>
+                    <div class="form-control">
+                        <label class="form-label form-input-required">Enter Email</label>
+                        <input class="form-input" type="email" value="ex.leftme@why.com" readonly>
+                    </div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-control%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2520form-input-required%2522%253EEnter%2520Email%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input%2522%2520type%253D%2522email%2522%2520disabled%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522form-control%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2520form-input-required%2522%253EEnter%2520Email%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input%2522%2520type%253D%2522email%2522%2520value%253D%2522ex.leftme%2540why.com%2522%2520readonly%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Success and Error Validations</h3>
+                </div>
+                <div class="component-code-examples">
+                    <div class="form-control form-valid-success">
+                        <label for="input-success" class="form-label">Success: </label>
+                        <input type="Email" class="form-input" placeholder="Enter Email" value="goodboy@gmail.com">
+                        <div class="form-valid-message "><span><i class="fas fa-check-circle"></i></span>Looks Great.
+                        </div>
+                    </div>
+
+                    <div class="form-control  form-valid-warning">
+                        <label for="input-success" class="form-label">Warning: </label>
+                        <input type="Email" class="form-input" placeholder="Enter Email" value="123456">
+                        <div class="form-valid-message"><span><i class="fas fa-check-circle"></i></span>Password too
+                            weak.</div>
+                    </div>
+
+                    <div class="form-control form-valid-error">
+                        <label for="input-success" class="form-label">Error: </label>
+                        <input type="Email" class="form-input" placeholder="Enter Email">
+                        <div class="form-valid-message"><span><i class="fas fa-check-circle"></i></span>Password should
+                            atleast be 8 characters long.</div>
+                    </div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-control%2520form-valid-success%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522input-success%2522%2520class%253D%2522form-label%2522%253ESuccess%253A%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522Email%2522%2520class%253D%2522form-input%2522%2520placeholder%253D%2522Enter%2520Email%2522%2520value%253D%2522goodboy%2540gmail.com%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-valid-message%2520%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253ELooks%2520Great.%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522form-control%2520%2520form-valid-warning%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522input-success%2522%2520class%253D%2522form-label%2522%253EWarning%253A%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522Email%2522%2520class%253D%2522form-input%2522%2520placeholder%253D%2522Enter%2520Email%2522%2520value%253D%2522123456%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-valid-message%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EPassword%2520too%2520weak.%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522form-control%2520form-valid-error%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522input-success%2522%2520class%253D%2522form-label%2522%253EError%253A%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522Email%2522%2520class%253D%2522form-input%2522%2520placeholder%253D%2522Enter%2520Email%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-valid-message%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EPassword%2520should%2520atleast%2520be%25208%2520characters%2520long.%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Checkbox Input</h3>
+                    <p>These allows users to select mutliple options from a list.</p>
+                </div>
+                <div class="component-code-examples">
+                    <div class="form-control">
+                        <input type="checkbox" class="form-input" name="checkbox-one" checked>
+                        <label class="form-label" for="checkbox-one">Checked</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="checkbox" class="form-input" name="checkbox-two">
+                        <label class="form-label" for="checkbox-two">Dolo Lelo</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="checkbox" class="form-input" name="checkbox-three" disabled>
+                        <label class="form-label" for="checkbox-three">Disabled</label>
+                    </div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-control%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522form-input%2522%2520name%253D%2522checkbox-one%2522%2520checked%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2522%2520for%253D%2522checkbox-one%2522%253EChecked%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522form-control%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522form-input%2522%2520name%253D%2522checkbox-two%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520%2520class%253D%2522form-label%2522%2520for%253D%2522checkbox-two%2522%253EDolo%2520Lelo%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522form-control%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522form-input%2522%2520name%253D%2522checkbox-three%2522%2520disabled%253E%250A%2520%2520%2520%2520%253Clabel%2520%2520class%253D%2522form-label%2522%2520for%253D%2522checkbox-three%2522%253EDisabled%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Radio Input</h3>
+                    <p>These allows users to select only one option from a list.</p>
+                </div>
+                <div class="component-code-examples">
+                    <div class="form-control">
+                        <input type="radio" class="form-input" name="gender" checked>
+                        <label class="form-label" for="radio-one">Checked</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="radio" class="form-input" name="gender">
+                        <label class="form-label" for="radio-two">Dolo Lelo</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="radio" class="form-input" name="gender" disabled>
+                        <label class="form-label" for="radio-three">Disabled</label>
+                    </div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522form-control%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520class%253D%2522form-input%2522%2520name%253D%2522gender%2522checked%253E%250A%2520%2520%2509%253Clabel%2520%2520class%253D%2522form-label%2522%2520for%253D%2522radio-one%2522%253EChecked%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522form-control%2522%253E%250A%2520%2520%2509%253Cinput%2520type%253D%2522radio%2522%2520class%253D%2522form-input%2522%2520name%253D%2522gender%2522%253E%250A%2520%2509%253Clabel%2520%2520class%253D%2522form-label%2522%2520for%253D%2522radio-two%2522%253EDolo%2520Lelo%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522form-control%2522%253E%250A%2520%2520%2509%253Cinput%2520type%253D%2522radio%2522%2520class%253D%2522form-input%2522%2520name%253D%2522gender%2522%2520disabled%253E%250A%2520%2520%2509%253Clabel%2520%2520class%253D%2522form-label%2522%2520for%253D%2522radio-three%2522%253EDisabled%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </main>
+            <aside class="aside">
+                <h3 class="faded-font">Components</h3>
+                <ul class="aside-nav-links">
+                    <li class="nav-item"><a href="../avatar/avatar.html">Avatar</a></li>
+                    <li class="nav-item"><a href="../alert/alert.html">Alert</a></li>
+                    <li class="nav-item"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="nav-item"><a href="../button/button.html">Button</a></li>
+                    <li class="nav-item"><a href="../card/card.html">Card</a></li>
+                    <li class="nav-item"><a href="../image/image.html">Image</a></li>
+                    <li class="nav-item"><a href="../input/input.html" class="aside-btn-active">Input</a></li>
+                    <li class="nav-item"><a href="../modal/modal.html">Modal</a></li>
+                    <li class="nav-item"><a href="../rating/rating.html">Rating</a></li>
+                    <li class="nav-item"><a href="../toast/toast.html">Toast</a></li>
+                    <li class="nav-item"><a href="../lists/lists.html">Lists</a></li>
+                    <li class="nav-item"><a href="../slider/slider.html">Slider</a></li>
+                    <li class="nav-item"><a href="../navigation/navigation.html">Navigation</a></li>
+                    <li class="nav-item"><a href="../utilities/utilities.html">Utilities</a></li>
+                    <li class="nav-item"><a href="../grid/grid.html">Simplified Grids</a></li>
+                </ul>
+                <button class="btn-icon btn-icon-primary" id="close-aside-btn"><i class="fas fa-times"></i></button>
+            </aside>
+        </div>
+        <hr class="hr">
+        <footer class="footer flex-row-spc-btw">
+            <p>Kiron Paul</p>
+            <nav class="footer-actions">
+                <ul class="flex-row-center-center">
+                    <li><a href="https://twitter.com/pulmicheal1" class="btn-icon btn-icon-primary" target="_blank"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/paul-coder-22" class="btn-icon btn-icon-primary" target="_blank"><i
+                                class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kironpaul/" class="btn-icon btn-icon-primary"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

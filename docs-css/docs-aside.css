@@ -1,0 +1,30 @@
+
+.aside{
+    text-align: right;
+    background-color: var(--clr-background);
+}
+
+.aside-nav-links .nav-item{
+    padding: var(--padding-sm);
+}
+.aside-nav-links .nav-item a{
+    color: var(--clr-black);
+    font-weight: var(--fw--semi-bold-500);
+}
+
+.aside-nav-links .nav-item a:hover,
+.aside-nav-links .nav-item a:active,
+.aside-nav-links .nav-item .aside-btn-active
+{
+    color: var(--clr-primary);
+    border-bottom: 3px solid var(--clr-secondary);
+    font-weight: var(--fw-bold-600);
+}
+
+/*  */
+#close-aside-btn{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: none;
+}

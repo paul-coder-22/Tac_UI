@@ -1,0 +1,39 @@
+
+.list{
+   width: 100%; 
+   max-width: 26rem;
+   border: 1px solid var(--clr-grey-light);
+}
+
+.list .list-title{
+    padding: var(--padding-md);
+    border-bottom: 1px solid var(--clr-black);
+}
+
+.list .list-item{
+    background-color: white;
+    padding: var(--padding-sm) var(--padding-md);
+}
+
+/* spaced  list */
+.spaced-list .list-item{
+    margin: var(--margin-xs);
+}
+
+/*  */
+.horiz-list{
+    max-width: max-content;
+    background-color: white;
+}
+.horiz-list .btn {
+    padding:0 ;
+    margin: var(--margin-xs);
+}
+
+/*notification-list */
+.notif-list .list-item{
+    display: flex;
+}
+.notif-list .notif-text{
+    flex: 1;
+}

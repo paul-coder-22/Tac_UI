@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating | TacUI</title>
+    <link rel="icon" href="../Assets/header-logo.svg" type="image/svg">
+    <link rel="stylesheet" href="../components.css">
+    <link rel="stylesheet" href="/docs-css/docs.css">
+    <script src="https://kit.fontawesome.com/e057b28e7b.js" crossorigin="anonymous"></script>
+    <script src="/docsite.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar flex-row-spc-btw">
+            <div class="nav-header">
+                <h1 class="nav-logo"><a href="/index.html">TacUI</a></h1>
+            </div>
+            <nav class="nav-actions">
+                <ul class="flex-row-spc-btw">
+                    <li><a href="https://github.com/paul-coder-22/ComponentLib" class="btn-icon btn-icon-primary"
+                            target="_blank"><i class="fab fa-github"></i></a></li>
+                    <!-- mobile nav toggle button -->
+                    <li class="nav-toggle-li-item"><button class="btn-icon btn-icon-primary" id="nav-toggle-btn"><i
+                                class="fas fa-bars"></i></button></li>
+                </ul>
+            </nav>
+        </div>
+        <!--  -->
+        <hr class="hr">
+        <div class="grid-doc-layout">
+            <!-- main -->
+            <main class="main">
+                <div class="component-intro">
+                    <h2>Rating.</h2>
+                    <p>Ratings help the user to provide a product review and also help in making a buying decision based
+                        on average product ratings.</p>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Product Rating.</h3>
+                </div>
+                <div class="component-code-examples flex-row-center-center">
+                    <div class="rating-container">
+                        <label>
+                            <input type="checkbox" class="rating-input" checked disabled>
+                            <span class="rating-icon"><i class="fas fa-star"></i></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="rating-input" checked disabled>
+                            <span class="rating-icon"><i class="fas fa-star"></i></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="rating-input" checked disabled>
+                            <span class="rating-icon"><i class="fas fa-star"></i></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="rating-input" disabled>
+                            <span class="rating-icon"><i class="fas fa-star"></i></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="rating-input" disabled>
+                            <span class="rating-icon"><i class="fas fa-star"></i></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating-container%2522%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522rating-input%2522%2520checked%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522rating-input%2522%2520checked%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522rating-input%2522%2520checked%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522rating-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522rating-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Product Average Rating <span class="primary-accent">Style-1</span>.</h3>
+                </div>
+                <div class="component-code-examples flex-row-center-center">
+                    <div class="rating-container">
+                        <span class="rating-user-avg">4.3 <span class="rating-icon"><i
+                                    class="fas fa-star"></i></span></span>
+                        <span class="rating-count">197 Ratings</span>
+                    </div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating-container%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-user-avg%2522%253E4.3%2520%253Cspan%2520class%253D%2522rating-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-text-count%2522%253E197%2520Ratings%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <!--  -->
+                <div class="component-sub-heading">
+                    <h3>Product Average Rating <span class="primary-accent">Style-2</span>.</h3>
+                    <p>To achieve this just add <span class="primary-accent">rating-short</span> to the rating-container
+                        and add separator element as shown in below code.</p>
+                </div>
+                <div class="component-code-examples flex-row-center-center">
+                    <div class="rating-container rating-short">
+                        <span class="rating-user-avg">4.3<span class="rating-icon"><i
+                                    class="fas fa-star"></i></span></span>
+                        <span class="rating-separator"> | </span>
+                        <span class="rating-count">29</span>
+                    </div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating-container%2520rating-short%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-user-avg%2522%253E4.3%253Cspan%2520class%253D%2522rating-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-separator%2522%253E%2520%257C%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-number-count%2522%253E29%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </main>
+            <aside class="aside">
+                <h3 class="faded-font">Components</h3>
+                <ul class="aside-nav-links">
+                    <li class="nav-item"><a href="../avatar/avatar.html">Avatar</a></li>
+                    <li class="nav-item"><a href="../alert/alert.html">Alert</a></li>
+                    <li class="nav-item"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="nav-item"><a href="../button/button.html">Button</a></li>
+                    <li class="nav-item"><a href="../card/card.html">Card</a></li>
+                    <li class="nav-item"><a href="../image/image.html">Image</a></li>
+                    <li class="nav-item"><a href="../input/input.html">Input</a></li>
+                    <li class="nav-item"><a href="../modal/modal.html">Modal</a></li>
+                    <li class="nav-item"><a href="../rating/rating.html" class="aside-btn-active">Rating</a></li>
+                    <li class="nav-item"><a href="../toast/toast.html">Toast</a></li>
+                    <li class="nav-item"><a href="../lists/lists.html">Lists</a></li>
+                    <li class="nav-item"><a href="../slider/slider.html">Slider</a></li>
+                    <li class="nav-item"><a href="../navigation/navigation.html">Navigation</a></li>
+                    <li class="nav-item"><a href="../utilities/utilities.html">Utilities</a></li>
+                    <li class="nav-item"><a href="../grid/grid.html">Simplified Grids</a></li>
+                </ul>
+                <button class="btn-icon btn-icon-primary" id="close-aside-btn"><i class="fas fa-times"></i></button>
+            </aside>
+        </div>
+        <!--  -->
+        <hr class="hr">
+        <footer class="footer flex-row-spc-btw">
+            <p>Kiron Paul</p>
+            <nav class="footer-actions">
+                <ul class="flex-row-center-center">
+                    <li><a href="https://twitter.com/pulmicheal1" class="btn-icon btn-icon-primary" target="_blank"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/paul-coder-22" class="btn-icon btn-icon-primary" target="_blank"><i
+                                class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kironpaul/" class="btn-icon btn-icon-primary"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
